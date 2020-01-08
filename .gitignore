@@ -1,1 +1,4 @@
-public/
+public/index.js
+public/index.css
+
+node_modules/
