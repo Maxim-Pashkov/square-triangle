@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+install:
+  - npm install
+script:
+  - npm run test
+  - npm run prod
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: cc2625a7938a6d721bff62979f2e09070c81d65c
+  local_dir: public
+  on:
+    branch: master
