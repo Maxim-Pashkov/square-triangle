@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require @babel/register ./test/**/*.js",
     "build": "webpack --mode development",
     "watch": "webpack --mode development --watch",
     "prod": "webpack -p"
@@ -20,10 +20,14 @@
   },
   "homepage": "https://github.com/Maxim-Pashkov/square-triangle#readme",
   "dependencies": {
-    "bootstrap": "^4.4.1"   
+    "bootstrap": "^4.4.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
     "css-loader": "^3.4.1",
+    "mocha": "^7.0.0",
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
