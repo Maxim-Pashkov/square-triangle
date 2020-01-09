@@ -9,6 +9,8 @@ install:
 script:
   - npm run test
   - npm run prod
+env:
+  - NODE_ENV=production
 deploy:
   provider: pages
   cleanup: true
