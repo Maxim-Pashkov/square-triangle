@@ -10,6 +10,7 @@ script:
   - npm run test
 before_deploy: 
   - npm run prod
+  - git commit -m "prod build"
 deploy:
   provider: pages
   cleanup: true
