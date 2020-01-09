@@ -9,10 +9,6 @@ install:
 script:
   - npm run test
   - npm run prod
-env:
-  - NODE_ENV=production
-cache:
-  npm: false
 deploy:
   provider: pages
   cleanup: true
