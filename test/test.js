@@ -18,4 +18,9 @@ describe('square triangle', () => {
     it('should 66.5 if a=7 and h=19', () => {
         assert.equal(SquareTriangle.calc(7, 19), 66.5);
     });
+
+    // BAD TEST
+    it('should 30 if a=10 and h=3', () => {
+        assert.equal(SquareTriangle.calc(10, 3), 30);
+    });
 });
