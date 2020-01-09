@@ -45,7 +45,8 @@ module.exports = (env, argv) => ({
       template: path.resolve(__dirname, 'src', 'index.html'),
       hash: argv.mode === 'production',
       minify: argv.mode === 'production' ? {
-        collapseWhitespace: true
+        collapseWhitespace: true,
+        removeComments: true
       } : false,
     }),
     new CleanWebpackPlugin(),
