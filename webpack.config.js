@@ -15,7 +15,7 @@ module.exports = (env, argv) => ({
         cssProcessorPluginOptions: {
           preset: ['default', {
             discardComments: {
-                removeAll: true,
+              removeAll: true,
             },
           }]
         },     
