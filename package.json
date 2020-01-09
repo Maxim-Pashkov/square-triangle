@@ -7,7 +7,7 @@
     "test": "mocha --require @babel/register ./test/**/*.js",
     "build": "webpack --mode development",
     "watch": "webpack --mode development --watch",
-    "prod": "webpack -p"
+    "prod": "cross-env NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/register": "^7.7.7",
+    "cross-env": "^6.0.3",
     "css-loader": "^3.4.1",
     "mocha": "^7.0.0",
     "style-loader": "^1.1.2",
