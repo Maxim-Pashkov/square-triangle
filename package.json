@@ -7,7 +7,7 @@
     "test": "mocha --require @babel/register ./test/**/*.js",
     "build": "webpack --mode development",
     "watch": "webpack --mode development --watch",
-    "prod": "webpack --env.NODE_ENV=production --env.production"
+    "prod": "webpack --mode production --env.NODE_ENV=production --env.production"
   },
   "repository": {
     "type": "git",
