@@ -11,6 +11,8 @@ script:
   - npm run prod
 env:
   - NODE_ENV=production
+cache:
+  npm: false
 deploy:
   provider: pages
   cleanup: true
