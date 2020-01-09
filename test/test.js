@@ -20,7 +20,7 @@ describe('square triangle', () => {
     });
 
     // BAD TEST
-    it('should 30 if a=10 and h=3', () => {
-        assert.equal(SquareTriangle.calc(10, 3), 30);
-    });
+    // it('should 30 if a=10 and h=3', () => {
+    //     assert.equal(SquareTriangle.calc(10, 3), 30);
+    // });
 });
