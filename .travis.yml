@@ -8,6 +8,7 @@ install:
   - npm install
 script:
   - npm run test
+before_deploy: 
   - npm run prod
 deploy:
   provider: pages
