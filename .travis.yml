@@ -10,6 +10,7 @@ script:
   - npm run test
 before_deploy: 
   - npm run prod
+  - echo "node_modules/" > .gitignore
 deploy:
   provider: pages
   skip_cleanup: true
