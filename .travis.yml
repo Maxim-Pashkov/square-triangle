@@ -10,10 +10,9 @@ script:
   - npm run test
 before_deploy: 
   - npm run prod
-  - git commit -m "prod build"
 deploy:
   provider: pages
-  cleanup: true
+  skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: public
   on:
