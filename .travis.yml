@@ -11,7 +11,7 @@ script:
   - npm run prod
 deploy:
   provider: pages
-  cleanup: false
+  cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: public
   on:
